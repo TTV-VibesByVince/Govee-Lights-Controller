@@ -41,7 +41,7 @@ play GIFs on Govee Curtain Lights through the Govee cloud.
    or print them. Before every commit, scan what is staged for addresses,
    emails and keys. Commits use the GitHub no-reply address, not a personal
    email. The repository is public:
-   https://github.com/TTV-VibesByVince/govee-light-controller
+   https://github.com/TTV-VibesByVince/Govee-Lights-Controller
 
 ## Layout
 

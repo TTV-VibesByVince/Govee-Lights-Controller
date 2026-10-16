@@ -52,8 +52,8 @@ from chat and viewers' profile pictures as entrance animations.
 ## Install and run
 
 ```
-git clone https://github.com/TTV-VibesByVince/govee-light-controller.git
-cd govee-light-controller
+git clone https://github.com/TTV-VibesByVince/Govee-Lights-Controller.git
+cd Govee-Lights-Controller
 pip install -r requirements.txt
 python govee_controller_v1.4.py
 ```
