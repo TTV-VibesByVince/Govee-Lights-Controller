@@ -88,7 +88,7 @@ play GIFs on Govee Curtain Lights through the Govee cloud.
   seconds per GIF. Needs internet, a Govee account and a developer API key.
 - The upload uses the phone app's **private, undocumented API**. If GIFs stop
   working after a Govee app update, run `tools/curtain_test.py` first to see
-  which step fails. The method comes from a friend's "Govee GIF Player".
+  which step fails. The method comes from tailgunner357's "Govee GIF Player".
 - One GIF uploads at a time. A second web request while one is loading is
   refused, unless "Queue web-request GIFs" is on (`gif_queue`, off by
   default; at most `gif_queue_max` waiting).

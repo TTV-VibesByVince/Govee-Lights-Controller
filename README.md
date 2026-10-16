@@ -10,6 +10,14 @@ windows popping up.
 It also plays **GIFs on Govee Curtain Lights (H70B6)**, including GIF links
 from chat and viewers' profile pictures as entrance animations.
 
+![The Dashboard: every light, what is playing, colours and recent activity](docs/screenshots/dashboard.png)
+
+| Effects | Curtain GIFs |
+|---|---|
+| ![Effect tiles, each with a copy button for its MixItUp URL](docs/screenshots/effects.png) | ![The GIF library with a default GIF](docs/screenshots/gifs.png) |
+| **Alert presets** | **Scenes** |
+| ![Alert presets for raids, subs and follows](docs/screenshots/alerts.png) | ![Saved scenes with a colour per light](docs/screenshots/scenes.png) |
+
 ## Features
 
 - **Colours:** 46 named colours (`/red`, `/hotpink`, `/gaming`...) or any hex
@@ -136,9 +144,9 @@ of service. Use it at your own risk.
 
 ## Credits
 
-The curtain GIF upload method, including the fixed data block in
-`curtain_chunk1.txt`, comes from the *Govee GIF Player* by a friend of the
-author, used with permission.
+Thanks to **tailgunner357**: the curtain GIF upload method, including the
+fixed data block in `curtain_chunk1.txt`, comes from his *Govee GIF Player*
+and is used with his permission.
 
 ## License
 

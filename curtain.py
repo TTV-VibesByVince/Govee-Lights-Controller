@@ -12,8 +12,8 @@ free Govee developer API key.
 
 The upload uses the phone app's private API, which Govee does not document
 and may change. The method (and the fixed first chunk in
-curtain_chunk1.txt) comes from the "Govee GIF Player" by a friend of the
-author, used with permission.
+curtain_chunk1.txt) comes from the "Govee GIF Player" by tailgunner357,
+used with permission.
 """
 
 import base64

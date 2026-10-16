@@ -2,7 +2,7 @@
 Curtain GIF test  (throwaway - not part of the app)
 ---------------------------------------------------
 Proves whether a GIF can be pushed to the Govee Curtain Lights (H70B6) from
-Python, using the method from the "Govee GIF Player" by a friend of the author:
+Python, using the method from the "Govee GIF Player" by tailgunner357:
 log in to Govee's cloud like the phone app, upload a 30x32 GIF as a temporary
 DIY effect, switch the curtain to it, then delete the temporary effect.
 
@@ -50,7 +50,7 @@ USER_AGENT = ("GoveeHome/7.3.15 (com.ihoment.GoVeeSensor; build:3; "
 
 
 # ══════════════════════════════════════════════════════════════
-#  GIF writer  (ported from the friend's engine.js so the bytes have the
+#  GIF writer  (ported from tailgunner357's engine.js so the bytes have the
 #  exact layout the curtain is known to accept)
 # ══════════════════════════════════════════════════════════════
 
