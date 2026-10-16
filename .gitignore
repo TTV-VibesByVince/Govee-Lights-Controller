@@ -1,0 +1,18 @@
+# Your own setup - never commit these
+govee_config.json
+govee_account.json
+gifs/
+tools/api_key.txt
+tools/govee_token.json
+tools/last_sent.gif
+tools/test_pattern.gif
+tools/chunk1.txt
+
+# Kept locally only: the original single-file version and the design
+# mockup both contain real home-network addresses.
+govee_controller_v8.py
+Dashboard-html.zip
+
+# Python
+__pycache__/
+*.pyc
