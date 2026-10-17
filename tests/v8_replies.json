@@ -1,0 +1,165 @@
+{
+ "_about": "Replies of the original v8 controller to every URL it understood. Every later version must answer these exactly the same ({VERSION} = the app version).",
+ "replies": {
+  "/": [
+   200,
+   "Govee Light Controller {VERSION} running!"
+  ],
+  "/status": [
+   200,
+   "{\"status\": \"running\", \"version\": \"{VERSION}\", \"lights\": []}"
+  ],
+  "/red": [
+   200,
+   "Color: red"
+  ],
+  "/RED": [
+   200,
+   "Color: red"
+  ],
+  "/hotpink": [
+   200,
+   "Color: hotpink"
+  ],
+  "/fire": [
+   200,
+   "Color: fire"
+  ],
+  "/ff0080": [
+   200,
+   "Color #ff0080"
+  ],
+  "/zzzzzz": [
+   404,
+   "Unknown: zzzzzz"
+  ],
+  "/nope": [
+   404,
+   "Unknown: nope"
+  ],
+  "/on": [
+   200,
+   "On"
+  ],
+  "/off": [
+   200,
+   "Off"
+  ],
+  "/stop": [
+   200,
+   "Stopped"
+  ],
+  "/default": [
+   200,
+   "Default restored"
+  ],
+  "/dim": [
+   200,
+   "Brightness dim"
+  ],
+  "/low": [
+   200,
+   "Brightness low"
+  ],
+  "/medium": [
+   200,
+   "Brightness medium"
+  ],
+  "/half": [
+   200,
+   "Brightness half"
+  ],
+  "/bright": [
+   200,
+   "Brightness bright"
+  ],
+  "/max": [
+   200,
+   "Brightness max"
+  ],
+  "/strobe/red": [
+   200,
+   "strobe/red"
+  ],
+  "/strobe/red/forever": [
+   200,
+   "strobe/red/forever"
+  ],
+  "/strobe": [
+   200,
+   "strobe/white"
+  ],
+  "/flash/blue": [
+   200,
+   "flash/blue"
+  ],
+  "/pulse/green/forever": [
+   200,
+   "pulse/green/forever"
+  ],
+  "/strobe/rainbow": [
+   200,
+   "rainbow-strobe"
+  ],
+  "/strobe/rainbow/forever": [
+   200,
+   "rainbow-strobe/forever"
+  ],
+  "/blue-pulse": [
+   200,
+   "blue-pulse"
+  ],
+  "/blue-pulse/forever": [
+   200,
+   "blue-pulse/forever"
+  ],
+  "/red-flash": [
+   200,
+   "red-flash"
+  ],
+  "/gold-strobe": [
+   200,
+   "gold-strobe"
+  ],
+  "/nonsense-pulse": [
+   200,
+   "nonsense-pulse"
+  ],
+  "/strobe/red/5": [
+   200,
+   "strobe/red"
+  ],
+  "/rainbow": [
+   200,
+   "rainbow"
+  ],
+  "/rainbow/forever": [
+   200,
+   "rainbow/forever"
+  ],
+  "/rainbow-strobe": [
+   200,
+   "rainbow-strobe"
+  ],
+  "/rainbow-strobe/5": [
+   200,
+   "rainbow-strobe/5s"
+  ],
+  "/rainbow-strobe/forever": [
+   200,
+   "rainbow-strobe/forever"
+  ],
+  "/rainbowstrobe/2.5": [
+   200,
+   "rainbow-strobe/2.5s"
+  ],
+  "/rainbow-strobe/0.1": [
+   200,
+   "rainbow-strobe/0.5s"
+  ],
+  "/rainbow-strobe/9999": [
+   200,
+   "rainbow-strobe/600s"
+  ]
+ }
+}

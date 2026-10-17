@@ -13,6 +13,10 @@ play GIFs on Govee Curtain Lights through the Govee cloud.
    (`govee_controller_v1.4.py` -> `govee_controller_v1.5.py`).
    Leave `govee_controller_v8.py` untouched (it is kept locally only and is
    not in the GitHub repository - see `.gitignore`).
+   A version bump also means: update `Start Govee Controller.bat` (it names
+   the entry point), the version and file name in `README.md`, add a section
+   to `CHANGELOG.md`, and publish a GitHub release (see "Releases" below).
+   Docs-only changes (README, screenshots, credits) need no bump.
 3. **Never change existing MixItUp URLs.** Every URL that works today must keep
    working with the same meaning. New URLs may be added; existing ones may not
    be renamed, removed or given different behaviour. The list is in the
@@ -66,7 +70,19 @@ play GIFs on Govee Curtain Lights through the Govee cloud.
 - `govee_account.json` - Govee API key and sign-in (encrypted).
 - `gifs/` - saved GIFs, already converted to 30x32.
 - `Dashboard-html.zip` - the design mockup the UI follows (local only).
-- `README.md`, `LICENSE` (MIT), `requirements.txt` - for the GitHub page.
+- `README.md`, `LICENSE` (MIT), `requirements.txt`, `CHANGELOG.md`,
+  `CONTRIBUTING.md`, `SECURITY.md`, `ROADMAP.md` - the GitHub page.
+- `Start Govee Controller.bat` - double-click launcher (installs Pillow if
+  missing, starts the app without a console).
+- `docs/assets/` - project icon (`icon.png`, `icon-1024.png`, `icon.ico`) and
+  `social-preview.png` (uploaded by hand under GitHub > Settings > Social
+  preview). `docs/screenshots/` and `docs/media/demo.gif` - README pictures,
+  made from a made-up setup with addresses shown as `localip`. Never use the
+  real config for README pictures.
+- `tests/` - offline tests (`test_server.py`, `test_curtain.py`) and
+  `v8_replies.json`, the original v8 replies every version must reproduce.
+  Run by GitHub Actions (`.github/workflows/ci.yml`) on every push.
+- `.github/` - CI, issue templates, pull request template.
 
 ## How effects work
 
@@ -114,9 +130,22 @@ python govee_controller_v1.4.py
 Launching the app talks to the real lights (and applies the default colour if
 that setting is on). After any change, run the app, check
 `http://localhost:8765/status`, and fix errors before moving on. Compare old
-URLs against `govee_controller_v8.py` to prove nothing changed. Only one copy
+URLs against `govee_controller_v8.py` to prove nothing changed:
+`python tests/test_server.py` and `python tests/test_curtain.py` do this
+without the v8 file (they need no lights and no Govee account). Only one copy
 of the app can hold the port; a second copy shows "Server offline".
 
 The server listens on localhost only, unless `lan_access` ("Accept requests
 from my network", off by default) is on; then it listens on all adapters but
 still refuses any non-private address. Vibe TV on the NAS needs it on.
+
+## Releases
+
+Each version gets a GitHub release `vX.Y` with a zip of the repository
+(`git archive`) named `Govee-Lights-Controller-vX.Y.zip` and a
+`SHA256SUMS.txt`, plus short release notes from `CHANGELOG.md`:
+
+```
+git tag v1.4 && git push origin v1.4
+gh release create v1.4 Govee-Lights-Controller-v1.4.zip SHA256SUMS.txt --title "V1.4" --notes-file notes.md
+```

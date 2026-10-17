@@ -1,0 +1,47 @@
+name: Bug report
+description: Something doesn't work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please **don't** paste `govee_config.json` or `govee_account.json`; they contain your network addresses and Govee sign-in.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: The URL you sent (if any)
+      placeholder: http://localhost:8765/strobe/red
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown in the sidebar, under "Govee Control".
+      placeholder: V1.4
+    validations:
+      required: true
+  - type: input
+    id: lights
+    attributes:
+      label: Light models
+      placeholder: H6076, H70B6
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part?
+      options:
+        - Room lights (colours, effects, scenes, alerts)
+        - Curtain GIFs
+        - The app's window
+        - Something else
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Error text, screenshots (blur any addresses), Windows version.

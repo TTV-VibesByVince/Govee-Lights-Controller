@@ -1,0 +1,16 @@
+name: Feature idea
+description: Suggest something new
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the idea, and how you'd use it on stream.
+    validations:
+      required: true
+  - type: textarea
+    id: url
+    attributes:
+      label: What would the URL look like? (optional)
+      placeholder: /brightness/40
